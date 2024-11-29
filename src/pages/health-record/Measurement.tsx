@@ -143,19 +143,6 @@ export const measurementsMeta: measurementsMetaType = {
       },
     ],
   },
-   'period-duration': {
-    id: 'period-duration',
-    code: '3144-3',
-    title: 'Duración Período',
-    description: 'La medición de la duración del período permite determinar la cantidad de días entre un ciclo y otro. Valores normales entre 25 y 30 días.',
-    chartDatasets: [
-      {
-        label: 'Duración Período',
-        backgroundColor,
-        borderColor,
-      },
-    ],
-  },
 };
 
 const Measurement = (): JSX.Element | null => {
