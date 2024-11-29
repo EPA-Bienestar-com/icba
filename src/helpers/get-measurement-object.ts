@@ -354,42 +354,6 @@ case 'Duración Ejercicio':
         effectiveDateTime: date,
         status: 'final',
       };
-
-case 'Duración Período':
-      return {
-        resourceType: 'Observation',
-        subject,
-	category: [
-	    {
-		"coding": [
-	    {
-        	"system": "http://terminology.hl7.org/CodeSystem/observation-category",
-        	"code": "vital-signs",
-        	"display": "Vital Signs"
-    	    }
-    		    ]
-	    }
-	],
-        code: {
-          coding: [
-            {
-              code: '3144-3',
-              display: 'Last menstrual Period duration',
-              system: 'http://loinc.org',
-            },
-          ],
-          text: 'Last menstrual Period duration',
-        },
-        valueQuantity: {
-          code: 'd',
-          system: 'http://unitsofmeasure.org',
-          unit: 'd',
-          value: Number(firstValue),
-        },
-        effectiveDateTime: date,
-        status: 'final',
-      };
-
     case 'Peso':
       return {
         resourceType: 'Observation',
